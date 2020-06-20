@@ -1,5 +1,5 @@
 import urllib.request,json
-import csv
+import csvgit
 url =urllib.request.urlopen("http://lntpython.laptrinhpython.net:8181/dich-vu-san-pham/chi-tiet")
 noidung = json.loads(url.read().decode())
 stt =0
