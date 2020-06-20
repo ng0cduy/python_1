@@ -1,8 +1,6 @@
 import json
 lst_SV = []
-sv_1 = {"MSSV": "SV001","Họ tên":"Sinh viên 1","SDT":"090999999"}
-sv_2 = {"MSSV": "SV002","Họ tên":"Sinh viên 2","SDT":"090999992"}
-lst_SV = [sv_1,sv_2]
+
 stt=0
 while 1:
     stt+=1
@@ -17,4 +15,5 @@ while 1:
         break
 f =open("data/mssv.json",'w',encoding='utf-8')
 json.dump(lst_SV,f,ensure_ascii=False,indent=4)
+print("Ghi thành công")
 f.close()
