@@ -7,4 +7,4 @@ print ("-"*(5+30+50+30))
 for i in noidung:
     stt+=1
     print (str(stt).ljust(5),i['ten_san_pham'].ljust(30),i['hinh_san_pham'].ljust(50),"{:,}".format(i['gia_size_s']).ljust(15),"{:,}".format(i['gia_size_m']).ljust(15))
-    # print ("{:,.0f}".format(i['gia_size_s']).ljust(15))
+   
