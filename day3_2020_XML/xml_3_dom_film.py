@@ -1,5 +1,4 @@
 from xml.dom.minidom import parse
-import xml.dom.minidom
 
 
 tai_lieu = parse('files_xml/phim.xml')
