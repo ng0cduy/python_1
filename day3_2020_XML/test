@@ -1,0 +1,36 @@
+# lst_nhan_vien = []
+# dict_nhan_vien = {}
+# lst_don_vi = []
+# dict_don_vi ={}
+# tai_lieu_nhan_vien = parse('files_xml/nhan_vien.xml')
+# node_root = tai_lieu_nhan_vien.documentElement
+# nhan_vien = node_root.getElementsByTagName ("NHAN_VIEN")
+
+# tai_lieu_don_vi = parse('files_xml/don_vi.xml')
+# node_root1 = tai_lieu_don_vi.documentElement
+# don_vi = node_root1.getElementsByTagName ("DON_VI")
+
+# for dv in don_vi:
+#     ID_don_vi = dv.getAttribute('ID')
+#     ten_don_vi = dv.getAttribute('Ten')
+#     dict_don_vi["ID"]=ID_don_vi
+#     dict_don_vi["Tên đơn vị:"]=ten_don_vi
+#     lst_don_vi.append(dict_don_vi)
+# for nv in nhan_vien:
+#     ID = nv.getAttribute('ID')
+#     ten = nv.getAttribute('Ho_ten')
+#     gioi_tinh = nv.getAttribute('Gioi_tinh')
+#     ngay_sinh = nv.getAttribute('Ngay_sinh')
+#     CMNDs = nv.getAttribute('CMND')
+#     muc_luong = nv.getAttribute('Muc_luong')
+#     dia_chi = nv.getAttribute('Dia_chi')
+#     ID_nhan_vien = nv.getAttribute('ID_nhan_vien')
+#     dict_nhan_vien["ID"]=ID
+#     dict_nhan_vien["Họ tên:"]=ten
+#     dict_nhan_vien["Giới tính:"]=gioi_tinh
+#     dict_nhan_vien["Ngày sinh:"]=ngay_sinh
+#     dict_nhan_vien["CMND:"]=CMNDs
+#     dict_nhan_vien["Mức lương:"] = muc_luong
+#     dict_nhan_vien["Địa chỉ:"] =dia_chi
+#     dict_nhan_vien["ID đơn vị:"] = ID_nhan_vien
+#     lst_nhan_vien.append(dict_nhan_vien)
