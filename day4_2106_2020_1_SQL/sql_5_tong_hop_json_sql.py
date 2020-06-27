@@ -17,7 +17,7 @@ for tap_tin in os.listdir(duong_dan_thu_muc_TV):
     nhom_TV = noi_dung["Nhom_Tivi"]["Ma_so"]
 
     #khai bao cau lenh truy van
-    chuoi_sql = "INSERT INTO TV values (?,?,?,?,?,?,?)"
+    chuoi_sql = "INSERT INTO Tivi values (?,?,?,?,?,?,?)"
     conn.execute(chuoi_sql,(ma_so,ten,ky_hieu,don_gia_ban,don_gia_nhap,so_luong_ton,nhom_TV))
     conn.commit()
     print("Done"+ma_so)
