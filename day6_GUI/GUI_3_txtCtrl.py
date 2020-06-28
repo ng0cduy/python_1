@@ -1,0 +1,10 @@
+import wx
+app = wx.App()
+frame = wx.Frame (None,title ="Ví dụ StaticText",size = (500,500))
+panel  = wx.Panel(frame,-1)
+txt1 = wx.TextCtrl(panel,-1,"Nhập họ tên",size=(200,50),pos=(100,50))
+txt2 = wx.TextCtrl(panel,-1,"123456",style=wx.TE_PASSWORD,size=(200,50),pos=(100,150))
+txt3 = wx.TextCtrl(panel,-1,"Không được nhập vào đây",style=wx.TE_PASSWORD,size=(200,50),pos=(100,250))
+txt1.SetValue("Test thử")
+frame.Show(True)
+app.MainLoop()
