@@ -26,11 +26,6 @@ class TV(Database):
         kq=Database.execute(self,chuoi_sql,(ma_so,))
         return kq
     def tim_kiem (self,keyword):
-        # ds_tim_kiem = []
-        # for tim_kiem in self.doc_danh_sach_TV():
-        #     if tim_kiem("Nhom_TV").find(nhom_tv) !=-1:
-        #         ds_tim_kiem.append(tim_kiem)
-        # return ds_tim_kiem
         chuoi_dk = "%" + keyword + "%"
         chuoi_sql = 'SELECT * FROM Tivi Where Ten like ?'
         noi_dung = Database.get_all(self,chuoi_sql,(chuoi_dk,))
