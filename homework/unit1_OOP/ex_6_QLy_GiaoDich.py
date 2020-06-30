@@ -33,42 +33,47 @@ class Trans_Money(Transaction):
                 str(self.quantity)+ " - " + "Price: "+"{:,.0f}".format(self.price) + \
                 " -Total = " + "{:,.0f}".format(self.total_paid())
 if __name__ == "__main__":
-    id_ = input("Input Transaction ID: ")
-    day_ = input("Input Transaction day in dd/mm/yyyy: ")
-    quantity_ = float (input("Input Transaction quantity: "))
-    type_Transaction = int (input("Choose the type: 1.Gold     2.Money: "))
-    if (type_Transaction==1):
-        gold_type = input("Choose the type of gold: 18k /   24k /   9999: ")
-        if gold_type == "18k" or gold_type == "24k" or gold_type == "9999":
-            if gold_type == "18k":
-                price_1 = 35854000
-            elif gold_type =="24k":
-                price_1 = 47600000
-            elif gold_type == "9999":
-                price_1 = 47950000
-            data = Transaction(id_,day_,quantity_,gold_type,price_1)
-            print(data.print_tran())
-        else:
-            print ("Valid input, please input again!!")
-    elif type_Transaction == 2 :
-        money_type = input("Choose the type of money: USD /   EUR /   AUD ").upper()
-        if money_type== "USD" or money_type == "EUR" or money_type == "AUD":
-            if money_type == "USD":
-                price_1 = 233000
-            elif money_type.lower =="EUR":
-                price_1 = 26650
-            elif money_type == "AUD":
-                price_1 = 16000
-            buying_type = int(input("Do you want to buy or sell: 1/Buy  0/Sell: "))
-            if buying_type ==1 or buying_type ==0:
-                data=Trans_Money(id_,day_,quantity_,money_type,price_1,buying_type)
-                print(data.print_tran_money())
+    while 1:
+        id_ = input("Input Transaction ID: ")
+        day_ = input("Input Transaction day in dd/mm/yyyy: ")
+        quantity_ = float (input("Input Transaction quantity: "))
+        type_Transaction = int (input("Choose the type: 1.Gold     2.Money: "))
+        if (type_Transaction==1):
+            gold_type = input("Choose the type of gold: 18k /   24k /   9999: ")
+            if gold_type == "18k" or gold_type == "24k" or gold_type == "9999":
+                if gold_type == "18k":
+                    price_1 = 35854000
+                elif gold_type =="24k":
+                    price_1 = 47600000
+                elif gold_type == "9999":
+                    price_1 = 47950000
+                data = Transaction(id_,day_,quantity_,gold_type,price_1)
+                print(data.print_tran())
             else:
-                print ("Invalid buying type, input again!")
+                print ("Valid input, please input again!!")
+        elif type_Transaction == 2 :
+            money_type = input("Choose the type of money: USD /   EUR /   AUD ").upper()
+            if money_type== "USD" or money_type == "EUR" or money_type == "AUD":
+                if money_type == "USD":
+                    price_1 = 23300
+                elif money_type.lower =="EUR":
+                    price_1 = 26650
+                elif money_type == "AUD":
+                    price_1 = 16000
+                buying_type = int(input("Do you want to buy or sell: 1/Buy  0/Sell: "))
+                if buying_type ==1 or buying_type ==0:
+                    data=Trans_Money(id_,day_,quantity_,money_type,price_1,buying_type)
+                    print(data.print_tran_money())
+                else:
+                    print ("Invalid buying type, input again!")
+            else:
+                print ("Valid input, please input again!!")
         else:
-            print ("Valid input, please input again!!")
-    else:
-        print ("Error")
+            print ("Error,please input again")
+        c = input("Do you want to continue: y/n\n=>").lower()
+        if c != "y":
+            print("Thank you!")
+            break
         
 
         
