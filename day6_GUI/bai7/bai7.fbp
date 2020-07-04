@@ -69,7 +69,7 @@
                         <property name="aui_row"></property>
                         <property name="best_size"></property>
                         <property name="bg"></property>
-                        <property name="bitmap">Load From File; bai7/image/katakana.png</property>
+                        <property name="bitmap">Load From File; image/katakana.png</property>
                         <property name="caption"></property>
                         <property name="caption_visible">1</property>
                         <property name="center_pane">0</property>
@@ -1023,7 +1023,7 @@
                                         <property name="minimize_button">0</property>
                                         <property name="minimum_size"></property>
                                         <property name="moveable">1</property>
-                                        <property name="name">m_textCtrl6</property>
+                                        <property name="name">txt_ma_so</property>
                                         <property name="pane_border">1</property>
                                         <property name="pane_position"></property>
                                         <property name="pane_size"></property>
@@ -1154,7 +1154,7 @@
                                         <property name="minimize_button">0</property>
                                         <property name="minimum_size"></property>
                                         <property name="moveable">1</property>
-                                        <property name="name">m_textCtrl7</property>
+                                        <property name="name">txt_ten</property>
                                         <property name="pane_border">1</property>
                                         <property name="pane_position"></property>
                                         <property name="pane_size"></property>
@@ -1228,7 +1228,7 @@
                                         <property name="minimize_button">0</property>
                                         <property name="minimum_size"></property>
                                         <property name="moveable">1</property>
-                                        <property name="name">m_button5</property>
+                                        <property name="name">btn_them</property>
                                         <property name="pane_border">1</property>
                                         <property name="pane_position"></property>
                                         <property name="pane_size"></property>
@@ -1251,6 +1251,7 @@
                                         <property name="window_extra_style"></property>
                                         <property name="window_name"></property>
                                         <property name="window_style"></property>
+                                        <event name="OnButtonClick">btn_them_click</event>
                                     </object>
                                 </object>
                             </object>
@@ -1309,7 +1310,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size">480,150</property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_listBox1</property>
+                                <property name="name">lstbox_dsnhom</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
