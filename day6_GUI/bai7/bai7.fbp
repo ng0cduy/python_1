@@ -1353,7 +1353,7 @@
             <property name="minimum_size"></property>
             <property name="name">panel_Bai_7_3</property>
             <property name="pos"></property>
-            <property name="size">500,320</property>
+            <property name="size">500,350</property>
             <property name="subclass">; ; forward_declare</property>
             <property name="tooltip"></property>
             <property name="window_extra_style"></property>
@@ -1361,7 +1361,7 @@
             <property name="window_style">wxTAB_TRAVERSAL</property>
             <object class="wxBoxSizer" expanded="0">
                 <property name="minimum_size"></property>
-                <property name="name">Thêm nhân viên</property>
+                <property name="name">Them_nhan_vien</property>
                 <property name="orient">wxVERTICAL</property>
                 <property name="permission">none</property>
                 <object class="sizeritem" expanded="0">
@@ -1390,9 +1390,9 @@
                         <property name="dock_fixed">0</property>
                         <property name="docking">Left</property>
                         <property name="enabled">1</property>
-                        <property name="fg"></property>
+                        <property name="fg">wxSYS_COLOUR_WINDOWTEXT</property>
                         <property name="floatable">1</property>
-                        <property name="font"></property>
+                        <property name="font">Berlin Sans FB,90,90,20,74,0</property>
                         <property name="gripper">0</property>
                         <property name="hidden">0</property>
                         <property name="id">wxID_ANY</property>
@@ -1547,7 +1547,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl8</property>
+                                <property name="name">txt_ho_ten</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -1678,7 +1678,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl9</property>
+                                <property name="name">txt_maso</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -1809,7 +1809,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl10</property>
+                                <property name="name">txt_ten_dang_nhap</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -1940,7 +1940,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl11</property>
+                                <property name="name">txt_mat_khau</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -2101,7 +2101,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
-                                <event name="OnButtonClick">btn_them</event>
+                                <event name="OnButtonClick">btn_them_click</event>
                             </object>
                         </object>
                         <object class="gbsizeritem" expanded="0">
@@ -2147,7 +2147,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl12</property>
+                                <property name="name">txt_xac_nhan_mat_khau</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -2175,7 +2175,7 @@
                 </object>
             </object>
         </object>
-        <object class="Panel" expanded="0">
+        <object class="Panel" expanded="1">
             <property name="aui_managed">0</property>
             <property name="aui_manager_style">wxAUI_MGR_DEFAULT</property>
             <property name="bg"></property>
@@ -2189,7 +2189,7 @@
             <property name="id">wxID_ANY</property>
             <property name="maximum_size"></property>
             <property name="minimum_size"></property>
-            <property name="name">panel_Bai 7_4</property>
+            <property name="name">panel_Bai_7_4</property>
             <property name="pos"></property>
             <property name="size">1000,320</property>
             <property name="subclass">; ; forward_declare</property>
@@ -2385,7 +2385,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl13</property>
+                                <property name="name">txt_ma_so</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -2516,7 +2516,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl14</property>
+                                <property name="name">txt_ten</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -2647,7 +2647,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl15</property>
+                                <property name="name">txt_ky_hieu</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -2778,7 +2778,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl16</property>
+                                <property name="name">txt_don_gia_nhap</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -2909,7 +2909,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl18</property>
+                                <property name="name">txt_don_gia_ban</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -3040,7 +3040,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_textCtrl17</property>
+                                <property name="name">txt_so_luong_ton</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -3171,7 +3171,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_choice2</property>
+                                <property name="name">choice_nhom_tv</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -3193,6 +3193,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
+                                <event name="OnChoice">choice_nhom_tv_click</event>
                             </object>
                         </object>
                         <object class="gbsizeritem" expanded="0">
@@ -3245,7 +3246,7 @@
                                 <property name="minimize_button">0</property>
                                 <property name="minimum_size"></property>
                                 <property name="moveable">1</property>
-                                <property name="name">m_button8</property>
+                                <property name="name">btn_them</property>
                                 <property name="pane_border">1</property>
                                 <property name="pane_position"></property>
                                 <property name="pane_size"></property>
@@ -3268,6 +3269,7 @@
                                 <property name="window_extra_style"></property>
                                 <property name="window_name"></property>
                                 <property name="window_style"></property>
+                                <event name="OnButtonClick">btn_them_click</event>
                             </object>
                         </object>
                     </object>

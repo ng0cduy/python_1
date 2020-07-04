@@ -15,3 +15,7 @@ class NhomTivi(Database):
         chuoi_sql = "INSERT INTO NhomTiVi VALUES(?,?)"
         kq=Database.execute(self,chuoi_sql,(ma_so,ten))
         return kq
+    def lay_ma_so_tu_ten_nhom(self,ten_nhom):
+        chuoi_sql = "SELECT * FROM NhomTivi WHERE Ten=?"
+        ma_so = Database.get_one(self,chuoi_sql,(ten_nhom,))
+        return ma_so[0]
