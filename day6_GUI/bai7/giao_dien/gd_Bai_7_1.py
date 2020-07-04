@@ -107,4 +107,4 @@ class panel_Bai_7_1 ( wx.Panel ):
 			wx.MessageBox("Fail","Thông báo",wx.OK|wx.ICON_ERROR)
 		#Xuất thông báo
 
-	xl_cong_ty.disconnect()
+		xl_cong_ty.disconnect()

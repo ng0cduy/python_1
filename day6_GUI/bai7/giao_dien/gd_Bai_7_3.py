@@ -101,6 +101,11 @@ class panel_Bai_7_3 ( wx.Panel ):
         if mat_khau == xn_mat_khau:
             kq = xl_nhan_vien.them_nhan_vien(ma_so,ho_ten,ten_dang_nhap,mat_khau)
             if kq !=0:
+                self.txt_maso.SetValue("")
+                self.txt_ho_ten.SetValue("")
+                self.txt_ten_dang_nhap.SetValue("")
+                self.txt_mat_khau.SetValue("")
+                self.txt_xac_nhan_mat_khau.SetValue("")
                 wx.MessageBox("Success","Thong bao",wx.OK|wx.ICON_INFORMATION)
             else:
                 wx.MessageBox("Fail",wx.OK|wx.ICON_ERROR)

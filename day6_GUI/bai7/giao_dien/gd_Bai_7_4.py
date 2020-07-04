@@ -128,6 +128,15 @@ class panel_Bai_7_4 ( wx.Panel ):
        don_gia_ban = self.txt_don_gia_ban.GetValue()
        don_gia_nhap = self.txt_don_gia_nhap.GetValue()
        so_luong_ton = self.txt_so_luong_ton.GetValue()
-       Nhom_tivi = self.choice_nhom_tv_click()
+       Nhom_tivi = self.choice_nhom_tv_click(self)
        kq = xl_TV.them_tivi(ma_so,ten,ki_hieu,don_gia_ban,don_gia_nhap,so_luong_ton,Nhom_tivi)
-       
+       if kq != 0:
+        self.txt_ma_soSo.SetValue("")
+        self.txt_ten.SetValue("")
+        self.txt_ky_hieu.SetValue("")
+        self.txt_don_gia_ban.SetValue("")
+        self.txt_don_gia_nhap.SetValue("")
+        self.txt_so_luong_ton.SetValue("")
+        wx.MessageBox("Thêm dữ liệu thành công.", "Thông báo", wx.OK | wx.ICON_INFORMATION)
+       else:
+        wx.MessageBox("Thêm dữ liệu thất bại.", "Thông báo", wx.OK | wx.ICON_ERROR)
