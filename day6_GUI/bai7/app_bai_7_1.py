@@ -18,3 +18,4 @@ panel.txt_email.SetValue(ds_cong_ty['Email'])
 
 frame.Show(True)
 app.MainLoop()
+xl_cong_ty.disconnect()
