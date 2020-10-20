@@ -1,0 +1,11 @@
+		if (int(ID) <=0 or int(ID) >id_list[-1]+1):
+			# wx.MessageBox('ID must a positive number, add another ID please','Notification',wx.OK|wx.ICON_INFORMATION)
+			wx.MessageBox('Invalid ID, please try again','Notification',wx.OK|wx.ICON_INFORMATION)
+		# elif (int(ID) >id_list[-1]+1):
+		# 	wx.MessageBox('Invalid ID, please try again','Notification',wx.OK|wx.ICON_INFORMATION)
+		elif (ID=="" or name ==""):
+			wx.MessageBox('ID and name cannot be blank!','Notification',wx.OK|wx.ICON_INFORMATION)
+		elif (ID in id_list or name.lower() in name_list):
+			wx.MessageBox('Information in the list already, Please try another ID and name','Notification',wx.OK|wx.ICON_INFORMATION)
+		# elif (name ==""):	
+		# 	wx.MessageBox('Name cannot be blank, add name please','Notification',wx.OK|wx.ICON_INFORMATION)
