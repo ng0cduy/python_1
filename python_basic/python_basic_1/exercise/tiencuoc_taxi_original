@@ -1,0 +1,65 @@
+giamocua4    =11000
+giamocua7    =12000
+giatrong31km4=15300
+giatrong31km7=16100
+giahon31km4  =12100
+giahon31km7  =13800
+tiencho      =750
+#xét điều kiện cho loại xe
+try:
+    loaixe = input("Nhập loại xe taxi: (4 chỗ hoặc 7 chỗ)")
+    assert (loaixe==4 or loaixe ==7),'>>>Chỉ được nhập 4 và 7'
+#nhập chữ vào cái dữ kiện loaixe, sokm, waittime
+except ValueError: 
+    print('Vui lòng nhập số')
+    exit(0)
+# nhập số khác 4 và 7     
+except AssertionError as Thongbaoloi1:
+    print(Thongbaoloi1)
+    exit(0)
+#xét điều kiện cho số km
+try:
+    sokm = float (input("Nhập số km bạn muốn đi: "))
+    assert (sokm>=0),'>>>Vui lòng nhập số dương'
+except ValueError:
+    print('Vui lòng nhập số')
+    exit(0)
+except AssertionError as Thongbaoloi2:
+    print(Thongbaoloi2)
+    exit(0)
+#xét điều kiện cho thời gian chờ
+try:
+    waittime = float (input("Nhập thời gian chờ theo phút: "))
+    assert (waittime>0),'>>>Vui lòng nhập số dương'
+except ValueError:
+    print('Vui lòng nhập số')
+    exit(0)
+except AssertionError as Thongbaoloi3:
+    print(Thongbaoloi3)
+    exit(0)
+else:
+    #xe 4 chỗ
+    if (loaixe ==4):
+        if (sokm<=0.8):
+            tien_cho=11000
+        elif (sokm<=31):
+            tien_cho=11000+(sokm-0.8)*15300
+        else:
+            tien_cho=11000+(31-0.8)*15300+(sokm-31)*12100
+
+    #xe 7 chỗ
+    if (loaixe ==7):
+        if (sokm<=0.8):
+            tien_cho=12000
+        elif (sokm<=31):
+            tien_cho=11000+(sokm-0.8)*16100
+        else:
+            tien_cho=11000+(31-0.8)*16100+(sokm-31)*13800
+    # tiền chờ
+    if (waittime<=5):
+        tienchotong =0
+    else:
+        tienchotong = (waittime-5)*tiencho 
+    # tổng tiền phải trả
+    tienphaitra = tienchotong+tien_cho
+    print ("Tổng tiền phải trả là: %.3f đồng "%tienphaitra)

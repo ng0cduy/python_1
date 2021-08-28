@@ -1,0 +1,5 @@
+a,b,c,d = eval(input("Nhập 4 giá trị a b c d: "))
+print('a,b,c,d=',a,b,c,d)
+maxvalue = max(a,b,c,d)
+minvalue = min(a,b,c,d)
+print (f'Max value: {maxvalue}, Min value:{minvalue}')

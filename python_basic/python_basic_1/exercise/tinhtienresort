@@ -1,0 +1,80 @@
+tienphongloai1 = 1260000
+tienphongloai2 = 1550000
+tienphongloai3 = 1830000
+tienphongloai4 = 1830000
+tienphongloai5 = 2120000
+tienphongloai6 = 2120000
+tienphongloai7 = 2540000
+tienphongloai8 = 4800000
+# điều kiện cho loại phòng
+try:
+    loaiphong =int(input("Vui lòng nhập loại phòng với các mã\n(1) Standard\n(2) Superior Garden View\n(3) Superior Ocean View\n(4) Garden View Bugalow\n(5) Pool View Bugalow\n(6) Family Room\n(7) Beach Front Bugalow\n(8) VIP sea view\n"))
+    assert(loaiphong>=1 and loaiphong <=8),'Vui lòng chỉ nhập từ 1 đến 8'
+except ValueError:
+    print ("Vui lòng chỉ nhập từ 1 đến 8")
+    exit(0)
+except AssertionError as thongbao1:
+    print (thongbao1)
+    exit(0)
+# điều kiện cho số đêm tại resort
+try: 
+    sodem =int(input("Vui lòng nhập số đêm: "))
+    assert(sodem >=1), 'Vui lòng nhập số đêm thích hợp'
+except ValueError:
+    print ("Vui lòng chỉ nhập số")
+    exit(0)
+except AssertionError:
+    print ("Vui lòng nhập số thích hợp")
+    exit(0)
+if (sodem==1):
+    if (loaiphong==1):
+        tongtienphong=tienphongloai1
+    elif(loaiphong==2):
+        tongtienphong=tienphongloai2
+    elif(loaiphong==3):
+        tongtienphong=tienphongloai3
+    elif(loaiphong==4):
+        tongtienphong=tienphongloai4
+    elif(loaiphong==5):
+        tongtienphong=tienphongloai5
+    elif(loaiphong==6):
+        tongtienphong=tienphongloai6
+    elif(loaiphong==7):
+        tongtienphong=tienphongloai7
+    elif(loaiphong==8):
+        tongtienphong=tienphongloai8
+elif (sodem<=3):
+    if (loaiphong==1):
+         tongtienphong=tienphongloai1*(sodem-1)+0.75*tienphongloai1
+    elif(loaiphong==2):
+         tongtienphong=tienphongloai2*(sodem-1)+0.75*tienphongloai2
+    elif(loaiphong==3):
+         tongtienphong=tienphongloai3*(sodem-1)+0.75*tienphongloai3
+    elif(loaiphong==4):
+         tongtienphong=tienphongloai4*(sodem-1)+0.75*tienphongloai4
+    elif(loaiphong==5):
+         tongtienphong=tienphongloai5*(sodem-1)+0.75*tienphongloai5
+    elif(loaiphong==6):
+         tongtienphong=tienphongloai6*(sodem-1)+0.75*tienphongloai6
+    elif(loaiphong==7):
+         tongtienphong=tienphongloai7*(sodem-1)+0.75*tienphongloai7
+    elif(loaiphong==8):
+         tongtienphong=tienphongloai8*(sodem-1)+0.75*tienphongloai8
+elif (sodem>=4):
+    if (loaiphong==1):
+         tongtienphong=tienphongloai1*(sodem-1)+0.7*tienphongloai1
+    elif(loaiphong==2):
+         tongtienphong=tienphongloai2*(sodem-1)+0.7*tienphongloai2
+    elif(loaiphong==3):
+         tongtienphong=tienphongloai3*(sodem-1)+0.7*tienphongloai3
+    elif(loaiphong==4):
+         tongtienphong=tienphongloai4*(sodem-1)+0.7*tienphongloai4
+    elif(loaiphong==5):
+         tongtienphong=tienphongloai5*(sodem-1)+0.7*tienphongloai5
+    elif(loaiphong==6):
+         tongtienphong=tienphongloai6*(sodem-1)+0.7*tienphongloai6
+    elif(loaiphong==7):
+         tongtienphong=tienphongloai7*(sodem-1)+0.7*tienphongloai7
+    elif(loaiphong==8):
+         tongtienphong=tienphongloai8*(sodem-1)+0.7*tienphongloai8
+print ("Tổng số tiền phải trả là %.0f đồng" %tongtienphong)

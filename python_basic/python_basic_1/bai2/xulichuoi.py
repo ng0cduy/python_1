@@ -1,0 +1,7 @@
+s1=input("Nhập chuỗi s1: ")
+s2=input("Nhập chuỗi s2: ")
+s3=input("Nhập chuỗi s3: ")
+index = int(input("Nhập chỉ số: "))
+print ("chiều dài chuỗi s1 là %d \nChiều dài chuỗi s2 là %d \nChiều dài chuỗi s3 là %d" %(len(s1),len(s2),len(s3)))
+print ("chuỗi s4 là: " ,s1[index:])
+print ("2 lần chuỗi s2:", s2*2)
