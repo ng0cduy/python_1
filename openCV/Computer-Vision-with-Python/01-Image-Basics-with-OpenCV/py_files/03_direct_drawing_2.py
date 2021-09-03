@@ -19,7 +19,6 @@ def draw_rectangle(event,x,y,flags,param):
     elif event == cv2.EVENT_LBUTTONUP:
             cv2.rectangle(img,(ix,iy),(x,y),(0,0,255),-1)
 
-
 img = np.zeros(shape=(512,512,3),dtype= np.uint8)
 
 cv2.namedWindow('interact_draw')
